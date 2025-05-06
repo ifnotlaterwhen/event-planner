@@ -4,8 +4,11 @@
   "description": "This is an event planner web app for NC Launchpad.",
   "main": "listen.js",
   "scripts": {
+    "setup-dbs": "psql -f ./db/setup.sql",
     "test": "jest",
+    "prepare": "husky install",
     "start": "node listen.js",
+    "seed": "node ./db/seed/run-seed.js",
     "seed-prod": "NODE_ENV=production npm run seed"
   },
   "keywords": [],

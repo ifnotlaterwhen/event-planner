@@ -15,7 +15,7 @@ exports.fetchAllEvents = ({sort_by = 'startTime', order = 'asc', ...rest})=>{
     events.endTime,
     events.location,
     events.category,
-    event_img_url 
+    events.event_img_url 
     FROM events`
 
     if(rest.location){

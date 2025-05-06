@@ -10,21 +10,22 @@ const seed = (eventData) => {
           event_id SERIAL PRIMARY KEY,
           title VARCHAR NOT NULL,
           description TEXT,
-          start_time TIMESTAMP NOT NULL,
-          end_time TIMESTAMP NOT NULL,
+          startTime TIMESTAMP NOT NULL,
+          endTime TIMESTAMP NOT NULL,
           location VARCHAR NOT NULL,
-          category VARCHAR NOT NULL
+          category VARCHAR NOT NULL,
+          event_img_url VARCHAR
         );
       `);
     })
     .then(() => {
       const insertEventsQueryStr = format(
-        `INSERT INTO events (title, description, start_time, end_time, location, category) VALUES %L RETURNING *;`,
-        eventData.map(({ title, description, start_time, end_time, location, category }) => [
+        `INSERT INTO events (title, description, startTime, endTime, location, category) VALUES %L RETURNING *;`,
+        eventData.map(({ title, description, startTime, endTime, location, category }) => [
           title,
           description,
-          start_time,
-          end_time,
+          startTime,
+          endTime,
           location,
           category,
         ])
