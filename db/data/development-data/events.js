@@ -1,0 +1,57 @@
+module.exports = [
+    {
+      title: "Jazz in the Park",
+      description: "An open-air jazz concert featuring local musicians.",
+      startTime: "2025-06-12T18:00:00",
+      endTime: "2025-06-12T21:00:00",
+      location: "Hyde Park, London",
+      category: "Music",
+      event_img_url: "", 
+    },
+    {
+        title: "Digital Art Exhibition",
+        description: "Explore immersive digital installations by emerging artists.",
+        startTime: "2025-06-14T10:00:00",
+        endTime: "2025-06-14T17:00:00",
+        location: "Tate Modern, London",
+        category: "Art",
+        event_img_url: "", 
+    },
+    {
+        title: "World Food Culture Festival",
+        description: "Celebrate global cuisines with food stalls, music, and activities.",
+        startTime: "2025-06-20T11:00:00",
+        endTime: "2025-06-20T19:00:00",
+        location: "Southbank Centre, London",
+        category: "Culture",
+        event_img_url: "", 
+    },
+    {
+        title: "Startup Pitch Night",
+        description: "Local startups pitch to a panel of investors and tech enthusiasts.",
+        startTime: "2025-06-10T19:00:00",
+        endTime: "2025-06-10T22:00:00",
+        location: "TechHub London",
+        category: "Business",
+        event_img_url: "", 
+    },
+    {
+        title: "Poetry Slam Open Mic",
+        description: "A night of powerful spoken word performances.",
+        startTime: "2025-06-18T20:00:00",
+        endTime: "2025-06-18T22:30:00",
+        location: "The Poetry Café, London",
+        category: "Literature",
+        event_img_url: "", 
+    },
+    {
+        title: "AI for Beginners Workshop",
+        description: "An interactive workshop exploring the basics of artificial intelligence.",
+        startTime: "2025-06-22T13:00:00",
+        endTime: "2025-06-22T16:00:00",
+        location: "Google Campus, London",
+        category: "Tech",
+        event_img_url: "", 
+    }
+  ];
+  
